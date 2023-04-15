@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN apt update
 RUN apt install git -y
-RUN git config --global url."https://$NPM_TOKEN:@github.com/".insteadOf "https://github.com/"
+RUN git config --global user.name "$NPM_TOKEN"
 RUN bun install
 RUN bun bun
 RUN bun next build
