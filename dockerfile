@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN apt update
 RUN apt install git -y
-RUN apt install node -y
+RUN apt install nodejs npm -y
 RUN echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" > ~/.npmrc
 RUN npm i
 RUN bun bun
