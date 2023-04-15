@@ -1,7 +1,8 @@
 FROM oven/bun
 WORKDIR /app
 COPY . .
-RUN echo '[install]' > bunfig.toml
+RUN echo 
+RUN echo '[install]' >> bunfig.toml
 RUN echo 'registry = "https://$NPM_TOKEN@npm.pkg.github.com/"' >> bunfig.toml
 RUN bun i
 RUN bun bun
