@@ -1,6 +1,7 @@
 FROM oven/bun
+WORKDIR /app
 COPY . .
-RUN echo 'framework = "next"\r[install.scopes]\rsone-dao = "https://npm.pkg.github.com/:_authToken=$NPM_TOKEN"' > ~/.bunfig.toml
+RUN echo 'framework = "next"\r[install.scopes]\rsone-dao = "https://npm.pkg.github.com/:_authToken=$NPM_TOKEN"' > bunfig.toml
 RUN bun install
 RUN bun bun
 RUN bun next build
