@@ -3,8 +3,9 @@ WORKDIR /app
 COPY . .
 RUN apt update
 RUN apt install git -y
-RUN echo -e "machine github.com\n  login $NPM_TOKEN" > ~/.netrc 
-RUN bun install
+RUN apt install node -y
+RUN echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" > ~/.npmrc
+RUN npm i
 RUN bun bun
 RUN bun next build
 CMD ["bun", "start"]
