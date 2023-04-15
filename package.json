@@ -1,0 +1,42 @@
+{
+  "name": "@sone-dao/tone-service-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "bun next dev -p 42000",
+    "build": "bun next build",
+    "start": "bun --hot next start -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sone-dao/tone-webapp-shell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@sone-dao/sone-react-placeholder": "^1.2.1",
+    "@sone-dao/sone-react-utils": "^1.0.0",
+    "@sone-dao/tone-react-api": "^0.1.0",
+    "@sone-dao/tone-react-containers": "^1.0.0",
+    "@sone-dao/tone-react-helmet": "^0.24.0",
+    "@sone-dao/tone-react-sidebar": "^0.11.0",
+    "@sone-dao/tone-react-uploader": "^0.6.0",
+    "@sone-dao/tone-react-user-controller": "^0.3.0",
+    "bun-framework-next": "^12.2.5",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "18.15.11",
+    "@types/react": "^18.0.31",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "5.0.2"
+  }
+}
