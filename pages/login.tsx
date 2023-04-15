@@ -1,5 +1,5 @@
 import Placeholder from '@sone-dao/sone-react-placeholder'
-import { useUserData } from '@sone-dao/tone-react-user-context'
+import { useUserData } from '@sone-dao/tone-react-user-controller'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
