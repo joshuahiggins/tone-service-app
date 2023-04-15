@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN apt update
 RUN apt install git -y
-RUN echo 'framework = "next"\r[install.scopes]\r@sone-dao = "https://npm.pkg.github.com/:_authToken=$NPM_TOKEN"' > ~/.bunfig.toml
+RUN echo 'framework = "next"\r[install]\rregistry = "https://npm.pkg.github.com/:_authToken=$NPM_TOKEN"' > ~/.bunfig.toml
 RUN bun install
 RUN bun bun
 RUN bun next build
