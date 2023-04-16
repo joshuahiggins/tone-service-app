@@ -7,5 +7,5 @@ RUN echo "registry = 'https://$NPM_TOKEN@npm.pkg.github.com/:_authToken=${TOKEN}
 RUN bun i
 RUN bun bun
 #RUN bun run build
-CMD ["bun", "start"]
+CMD ["bun", "run build && bun start"]
 EXPOSE 8080
