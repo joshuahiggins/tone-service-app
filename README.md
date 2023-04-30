@@ -8,7 +8,7 @@ We're believers in [BunJS](https://github.com/oven-sh/bun) and utilize it for mo
  `Windows` users will have to use **WSL** to get the Tone WebApp to run locally. An excellent guide on setting up WSL and connecting VSCode can be found on the [Microsoft WSL website](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
 ### Why do I have to use WSL on Windows?
-Bun manages memory differently than Node, and was developed to run on *nix based systems first (this includes MacOS). While a native implementation of Bun for Windows is on the roadmap, it is currently not officially available.
+Bun manages memory differently than Node, and was developed to run on *nix based systems first (this includes MacOS). While a native implementation of Bun for Windows is on the roadmap, there is not one available.
 
 ## Install
 To get the Tone WebApp running locally on your machine, run the following commands in the project directory:
