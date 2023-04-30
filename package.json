@@ -26,7 +26,7 @@
 		"@sone-dao/tone-react-helmet": "0.24.0",
 		"@sone-dao/tone-react-sidebar": "^0.12.2",
 		"@sone-dao/tone-react-uploader": "0.6.1",
-		"@sone-dao/tone-react-user-controller": "0.3.5",
+		"@sone-dao/tone-react-user-controller": "0.4.0",
 		"bun-framework-next": "^12.2.5",
 		"next": "^13.2.4",
 		"react": "^18.2.0",
