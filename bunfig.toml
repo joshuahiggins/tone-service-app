@@ -1,1 +1,4 @@
 framework = "next"
+
+[install.scopes]
+sone-dao = "https://npm.pkg.github.com/
