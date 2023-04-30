@@ -16,7 +16,7 @@ To get the Tone WebApp running locally on your machine, run the following comman
     bun i
     bun bun
 
-This will install all modules and prepare bun (create a few files) to utilize NextJS' server, as Bun uses a different http module than Node.
+This will install all modules and prepares Bun (create a few files) to utilize NextJS' server, as Bun uses a different http module than Node.
 
 ## Usage
 The Tone WebApp is essentially a heavily modified NextJS application and has the same options available.
