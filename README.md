@@ -21,20 +21,16 @@ This will install all modules and prepares Bun (create a few files) to utilize N
 ## Usage
 The Tone WebApp is essentially a heavily modified NextJS application and has the same options available.
 
-To start a local development server with HMR (Hot Module Reloading), run:
+To start a local `development` server with HMR (Hot Module Reloading), run:
 
     bun run dev
 
 This will compile and start the application, being available on http://localhost:42000
 
----
-
-To build the Tone WebApp for production, run:
+To `build` the Tone WebApp for production, run:
 
     bun run build
-    
----
 
-To start the Tone WebApp in production mode, run:
+To start the Tone WebApp in `production` mode, run:
 
     bun run start
