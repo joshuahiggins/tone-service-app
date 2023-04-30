@@ -2,6 +2,8 @@
 
 # bun bun
 .bun
+node_modules.bun
+node_modules.server.bun
 
 # Logs
 
