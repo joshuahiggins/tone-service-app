@@ -2,7 +2,7 @@
 ## Prerequisites
 We're believers in [BunJS](https://github.com/oven-sh/bun) and utilize it for most of our infrastructure. If you're on `Linux` or `Mac` and have NPM installed, you can globally install Bun with:
 
-    npm i -g bun
+    npm install -g bun
  `Windows` users will have to use **WSL** to get the Tone WebApp to run locally. An excellent guide on setting up WSL and connecting VSCode can be found on the [Microsoft WSL website](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
 ### Why do I have to use WSL on Windows?
