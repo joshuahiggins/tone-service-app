@@ -11,6 +11,7 @@ const UploaderPage: NextPage = () => {
 
 	const releaseId = router.query.releaseId ? router.query.releaseId[0] : ''
 
+	// This will go in a core-ui page component or something we can template out.
 	const isAuthed =
 		user.roles?.admin == 'super' ||
 		user.roles?.admin == 'dev' ||
@@ -18,8 +19,9 @@ const UploaderPage: NextPage = () => {
 			? true
 			: false
 
-	!user.isLoggedIn || !isAuthed && router.push('/')
+	!user.isLoggedIn || (!isAuthed && router.push('/'))
 
+	// helper useEffect
 	useEffect(() => {
 		//console.log(router)
 	}, [router])
