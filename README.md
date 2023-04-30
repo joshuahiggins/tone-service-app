@@ -27,7 +27,7 @@ To get the Tone WebApp running locally on your machine, run the following comman
 This will install all modules and prepares Bun to utilize NextJS' server, as Bun uses a different http module than Node.
 
 ## Usage
-The Tone WebApp is essentially a heavily modified NextJS application and has the same options available.
+The Tone WebApp is essentially a heavily modified NextJS application and has the same functionality available.
 
 To start a local `development` server with HMR (Hot Module Reloading), run:
 
