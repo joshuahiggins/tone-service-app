@@ -9,14 +9,19 @@ We're believers in [BunJS](https://github.com/oven-sh/bun) and utilize it for mo
 Bun manages memory differently than Node, and is developed to run primarily on *nix based systems (including MacOS). While a native implementation of Bun for Windows is on their roadmap, one is not available.
 
 ### Bun Config
-Since our package registry is hosted publicly on Github, Bun is going to need a little bit of configuration to download our packages. 
+Since our package registry is hosted publicly on Github, Bun is going to need a little bit of configuration to download our packages.
 
-Create a new Github Personal Access Token (PAT) with repository read access.
+#### Github Repo Access
 
-In your `home` directory, create a new file called `.bunfig.toml` and insert the following:
+Until we publish packages to NPM, Bun requires us to create a Github Personal Access Token (PAT) with public repository reach access to pull modules.
 
-    [install.scopes]
-    sone-dao = "https://npm.pkg.github.com/:_authToken=[YOUR_GITHUB_PAT_HERE]"
+To create a PAT, visit the "Personal Access Tokens" page here: https://github.com/settings/tokens
+
+Select "Generate new token" and ensure that "Public Repositories (read only)" is selected. Set an expiration date and name the token as desired. After creation, save your token.
+
+Before using this repo for a development session, you will need to export your Github PAT:
+
+    export GITHUB_PAT="yourtokenhere"
 
 ## Install
 To get the Tone WebApp running locally on your machine, run the following commands in the project directory:
