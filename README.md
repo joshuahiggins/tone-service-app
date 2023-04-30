@@ -8,7 +8,7 @@ We're believers in [BunJS](https://github.com/oven-sh/bun) and utilize it for mo
 ### Why do I have to use WSL on Windows?
 Bun manages memory differently than Node, and is developed to run primarily on *nix based systems (including MacOS). While a native implementation of Bun for Windows is on their roadmap, one is not available.
 
-### Bun Config
+### Setting up the Bun config
 Since our package registry is hosted publicly on Github, Bun is going to need a little bit of configuration to download our packages. 
 
 Create a new Github Personal Access Token (PAT) with repository read access.
@@ -33,7 +33,7 @@ To start a local `development` server with HMR (Hot Module Reloading), run:
 
     bun run dev
 
-This will compile and start the application, being available on http://localhost:42000
+This will build and start the application, being available on http://localhost:42000
 
 To `build` the Tone WebApp for production, run:
 
