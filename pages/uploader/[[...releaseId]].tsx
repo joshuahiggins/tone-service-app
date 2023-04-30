@@ -1,4 +1,3 @@
-import Uploader from '@sone-dao/tone-react-uploader'
 import { useUserData } from '@sone-dao/tone-react-user-controller'
 import { NextPage } from 'next'
 import Head from 'next/head'
@@ -31,7 +30,7 @@ const UploaderPage: NextPage = () => {
 			<Head>
 				<title>Uploader - Tone</title>
 			</Head>
-			{isAuthed && <Uploader />}
+			{/*isAuthed && <Uploader />*/}
 		</>
 	)
 }

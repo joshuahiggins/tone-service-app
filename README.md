@@ -8,8 +8,8 @@ We're believers in [BunJS](https://github.com/oven-sh/bun) and utilize it for mo
 ### Why do I have to use WSL on Windows?
 Bun manages memory differently than Node, and is developed to run primarily on *nix based systems (including MacOS). While a native implementation of Bun for Windows is on their roadmap, one is not available.
 
-### Bun Config
-Since our package registry is hosted publicly on Github, Bun is going to need a little bit of configuration to download our packages.
+### Setting up the Bun config
+Since our package registry is hosted publicly on Github, Bun is going to need a little bit of configuration to download our packages. 
 
 #### Github Repo Access
 
@@ -32,13 +32,13 @@ To get the Tone WebApp running locally on your machine, run the following comman
 This will install all modules and prepares Bun to utilize NextJS' server, as Bun uses a different http module than Node.
 
 ## Usage
-The Tone WebApp is essentially a heavily modified NextJS application and has the same options available.
+The Tone WebApp is essentially a heavily modified NextJS application and has the same functionality available.
 
 To start a local `development` server with HMR (Hot Module Reloading), run:
 
     bun run dev
 
-This will compile and start the application, being available on http://localhost:42000
+This will build and start the application, being available on http://localhost:42000
 
 To `build` the Tone WebApp for production, run:
 
